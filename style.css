@@ -1,10 +1,8 @@
-/* Reset some default browser styles */
 body, h1, p, ul, li {
     margin: 0;
     padding: 0;
 }
 
-/* Apply some basic styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -30,7 +28,7 @@ b {
 
 ul {
     list-style: none;
-	margin-bottom: 20px;
+	margin-left: 20px;
 }
 
 li::before {
@@ -38,10 +36,8 @@ li::before {
     color: #333;
     display: inline-block;
     width: 1em;
-    margin-left: -1em;
 }
 
-/* Add some spacing and formatting to improve readability */
 .container {
     max-width: 800px;
     margin: 0 auto;
