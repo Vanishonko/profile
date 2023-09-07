@@ -4,7 +4,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: sans-serif;
-	background: #cbedfa;
+	background-color: #b0e9ff;
 }
 
 #mySite {
@@ -44,12 +44,12 @@ body {
 	text-decoration: none;
 }
 
-.navBar li a:hover:not(.active) {
+.navBar li a:hover:not(.activePage) {
 	background-color: #51ceff;
 	color: #111;
 }
 
-.navBar .active {
+.navBar .activePage {
 	background-color: #51ceff79;
 	color: #111;
 }
@@ -123,7 +123,6 @@ body {
 
 main {
 	padding: 50px;
-	background-color: #b0e9ff;
 	margin: 0 auto;
 }
 
