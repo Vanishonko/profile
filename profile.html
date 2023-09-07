@@ -6,46 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Profile</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="js/sideNav.js"></script>
 </head>
 
 <body>
     <div id="page-container">
-	<div id="content-wrap">
-    <header>
-		<h1 id="mySite">my site :)</h1>
-	</header>
-        <nav class="navBar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="dashboard.html">Dashboard</a></li>
-                <li><a href="profile.html" class="active">Profile</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-            </ul>
-        </nav>
+        <div id="content-wrap">
+            <header>
+                <h1 id="mySite">my site :)</h1>
+            </header>
+            <nav class="navBar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="profile.html" class="active">Profile</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="legacy/index.html">Legacy</a></li>
+                    <li id="openSideNavBtn" onclick="openSideNav()">
+                        <p class="fas fa-bars fa-lg"></p>
+                    </li>
+                </ul>
+            </nav>
 
+            <div id="mySideNav" class="sideNav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeSideNav()">&times;</a>
+                <a href="#">link 1</a>
+                <a href="#">link 2</a>
+                <a href="#">link 3</a>
+                <a href="#">link 4</a>
+                <a href="#">link 5</a>
+                <a href="#">link 6</a>
+            </div>
 
-    <h1>Hello, World!!!!</h1>
+            <main>
 
-    <img src="resources/me.png" style="margin: 10px;" />
+                <h1>Hello, World!!!!</h1>
 
-    <p>My name is <b>Ivan Iliev</b>.</p>
-    <p>I am <b>19</b> years old.</p>
-    <p>I am from <b>Bulgaria</b> and I've studied <b>Software and Hardware Sciences</b> at the <b>American College of
-            Sofia</b>.</p>
+                <img src="resources/me.png" style="margin: 10px;" />
 
-    <p>Some of my hobbies include:</p>
-    <ul>
-        <li>Cycling</li>
-        <li>Learning new things</li>
-        <li>Hiking</li>
-        <li>Exploring new things</li>
-    </ul>
+                <p>My name is <b>Ivan Iliev</b>.</p>
+                <p>I am <b>19</b> years old.</p>
+                <p>I am from <b>Bulgaria</b> and I've studied <b>Software and Hardware Sciences</b> at the <b>American
+                        College of
+                        Sofia</b>.</p>
 
-</div>
-<footer><a href="https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/">how i
-        got the footer to stay where it belongs</a></footer>
-</div>
+                <p>Some of my hobbies include:</p>
+                <ul>
+                    <li>Cycling</li>
+                    <li>Learning new things</li>
+                    <li>Hiking</li>
+                    <li>Exploring new things</li>
+                </ul>
+            </main>
+        </div>
+        <footer><a href="https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/">how i
+                got the footer to stay where it belongs</a></footer>
+    </div>
 </body>
 
 </html>
