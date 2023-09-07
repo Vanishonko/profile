@@ -1,0 +1,122 @@
+body {
+	background-position: center;
+	background-size: contain;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background: #b0e9ff;
+}
+
+#mySite {
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 40px;
+    color: #009900;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.navBar {
+	position: sticky;
+	top: 0;
+	background-color: #009900;
+	padding: 10px 0px 10px 0px;
+	color: white;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.navBar ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.navBar li {
+	float: left;
+	padding: 0px 10px 0px 10px;
+}
+
+.navBar li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.navBar li a:hover:not(.active) {
+	background-color: #51ceff;
+	color: #111;
+}
+
+.navBar .active {
+	background-color: #51ceff79;
+	color: #111;
+}
+
+/* The side navigation menu */
+.sideNav {
+	height: 100%; /* 100% Full-height */
+	width: 0; /* 0 width - change this with JavaScript */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Stay on top */
+	top: 0; /* Stay at the top */
+	left: 0;
+	background-color: #111; /* Black*/
+	overflow-x: hidden; /* Disable horizontal scroll */
+	padding-top: 60px; /* Place content 60px from the top */
+	transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sideNav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sideNav a:hover {
+	color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sideNav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+  }
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#content-wrap {
+	margin-left: auto;
+    padding-bottom: 2.5rem;
+}
+
+footer {
+    width: 100%;
+    height: 2.5rem;
+    bottom: 0px;
+    background-color: #000;
+    color: #fff;
+	font-size: 14px;
+	font-weight: normal;
+    position: absolute;
+	text-align: center;
+}
+
+footer a {
+	display: inline-block;
+	color: #fff;
+	line-height: 2.5rem;
+	vertical-align: middle;
+}
