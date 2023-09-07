@@ -4,7 +4,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: sans-serif;
-	background: #b0e9ff;
+	background: #cbedfa;
 }
 
 #mySite {
@@ -119,6 +119,12 @@ body {
 #content-wrap {
 	margin-left: auto;
 	padding-bottom: 2.5rem;
+}
+
+main {
+	padding: 50px;
+	background-color: #b0e9ff;
+	margin: 0 auto;
 }
 
 footer {
