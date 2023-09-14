@@ -2,24 +2,120 @@
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 	gap: 2rem;
-	background-color: white;
 }
 
 article {
-	background-color: rgb(112, 148, 180);
 	margin: auto;
 }
 
 /* will DEFINITELY be coming back to this. will animate blog */
 
+/*
+	blog card image will go back in 3d space and text will come forward
+
+
+
+*/
+/* 
 .articleImage {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	
-
 	max-width: 100%;
 	max-height: auto;
 	border-radius: 20px 20px 0px 0px;
+	object-fit: cover;
+	backface-visibility: hidden;
 
 }
+
+.card {
+	width: 300px;
+	height: 300px;
+	background-color: white;
+	border-radius: 20px 20px 0px 0px;
+	transition: transform 0.5s;
+}
+
+.card:hover {
+	transform: scale(1.1);
+	padding: 20px;
+	box-sizing: border-box;
+	transform-origin: top; /* Expand from the top 
+	transition: transform 0.5s;
+}
+
+.card:hover .cardContainer {
+	transform: scale(1.1);
+}
+
+.cardDescription {
+	display: none;
+}
+
+.card:hover .cardDescription {
+	display: block;
+} */
+
+/* Add hover styles for the card container */
+/* Add hover styles for the card container */
+
+.cardContent {
+	padding: 20px;
+}
+.card:hover {
+	transform: scale(1.2);
+	box-sizing: border-box;
+	transform-origin: center; /* Expand from the top */
+	transition: transform 0.5s;
+  }
+  
+  .card .cardDescription {
+	position: absolute;
+	bottom: 30px;
+	left: 10px;
+	right: 0;
+	padding: 10px;
+	border-radius: 0 0 20px 20px;
+	opacity: 0; /* Initially hidden */
+  }
+  
+  
+  .card:hover .cardDescription {
+	display: block;
+	opacity: 1;
+	transition: opacity 0.5s; /* Add a smooth opacity transition */
+  }
+  
+  .card:hover .cardTitle {
+	position: relative;
+	transform: translateY(-1.8rem);
+	transition: transform 0.5s;
+  }
+
+  /* Adjust the card size and image styles */
+  .card {
+	width: 300px;
+	background-color: white;
+	border-radius: 20px 20px 0px 0px;
+	transition: transform 0.5s;
+	overflow: hidden; /* Hide overflowing content */
+	position: relative; /* Position for absolute child */
+  }
+  
+  .articleImage {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	max-width: 100%;
+	max-height: auto;
+	border-radius: 20px 20px 0 0;
+	object-fit: cover;
+	backface-visibility: hidden;
+  }
+
+  .card:hover .articleImage {
+	transform: scale(0.9);
+	transition: transform 0.5s;
+  }
+  
