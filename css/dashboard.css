@@ -1,3 +1,13 @@
 table, th, td {
 	border: 1px solid #000;
 }
+
+.passed {
+	background-color: #00ff00;
+}
+.failed {
+	background-color: #ff0000;
+}
+.notTaken {
+	background-color: yellow;
+}
