@@ -19,7 +19,6 @@ body {
 	position: sticky;
 	top: 0;
 	background-color: #009900;
-	padding: 10px 0px 10px 0px;
 	color: white;
 	margin: 0 auto;
 	overflow: hidden;
@@ -57,7 +56,10 @@ body {
 #openSideNavBtn {
 	float: right;
 	margin: 0px 20px;
+	opacity: 1;
 	font-weight: bold;
+	vertical-align: middle;
+	transition: all 0.3s ease;
 }
 
 /* The side navigation menu */
