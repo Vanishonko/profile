@@ -1,0 +1,59 @@
+.pageContainer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.postContainer {
+	flex: 3;
+	text-align: center;
+}
+
+.mainImage {
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+	border-radius: 20px 20px 20px;
+}
+
+
+.postContainer .blogPostTitle{
+	font-size: 2rem;
+	font-weight: bold;
+	justify-content: center;
+}
+
+.otherPosts {
+	text-align: right;
+	min-width: 200px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.otherPosts h2 {
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+.otherPosts li {
+	margin: 10px 0px;
+	list-style-type: none;
+	transition: all 0.2s ease;
+}
+
+.otherPosts .title {
+	font-size: 1.2rem;
+	text-decoration: none;
+}
+
+.otherPosts time {
+	font-size: 0.8rem;
+	color: #000;
+}
+
+.otherPosts li:hover {
+	background-color: #eee;
+}
+
+
