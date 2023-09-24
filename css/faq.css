@@ -1,29 +1,27 @@
 .faq-container {
 	display: flex;
-	justify-content: center;
+	justify-content: left;
+    align-items: left;
 	flex-direction: column;
 }
 
 .hr-line {
-	width: 60%;
-	position: left;
+	width: 90%;
+    text-align: left;
+    margin: 0px 10px;
+    float: left;
 }
 
 .faq-page {
+    float: left;
 	color: #444;
     cursor: pointer;
     padding: 30px 20px;
-    width: 60%;
+    width: 90%;
     border: none;
     outline: none;
     transition: 0.4s;
-    margin: auto;
-}
-
-.faq-answer {
-	margin: auto;
-	width: 50%;
-	padding: auto;
+    margin: 0 auto;
 }
 
 .active,
@@ -32,10 +30,13 @@
 }
 
 .faq-answer {
-    padding: 0 18px;
+    width: 90%;
+    margin: 0px 1rem;
+    text-align: left;
     display: none;
     overflow: hidden;
 }
+
 .faq-page:after {
     content: '\02796';
     font-size: 14px;

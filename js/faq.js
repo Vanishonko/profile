@@ -7,8 +7,7 @@ faq.forEach(function (item) {
 		var answer = this.nextElementSibling;
 
 		this.classList.toggle("active");
-
-		if (answer.style.display === "block" || answer.style.display === "") {
+		if(answer.style.display === "block") {
 			answer.style.display = "none";
 		} else {
 			answer.style.display = "block";
