@@ -1,0 +1,20 @@
+<label for="file">File progress:</label>
+<progress id="file" max="100" value="90">70%</progress>
+
+<style>
+  #file {
+    position: relative;
+  }
+
+  #file::before {
+    content: "65%";
+    position: absolute;
+    top: 0;
+    left: 65%;
+    transform: translateX(-50%);
+    background-color: red; /* You can change the color as needed */
+    color: white; /* You can change the text color as needed */
+    padding: 2px 5px;
+    border-radius: 5px;
+  }
+</style>
