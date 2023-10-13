@@ -29,6 +29,26 @@
 	color: rgb(46, 46, 46);
 }
 
+.swotTableContainer {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	justify-content: center;
+	text-align: left;
+	align-items: center;
+	row-gap: 15px;
+	column-gap: 15px;
+	border: #000 1px solid;
+}
+
+.swotElement {
+	padding: 5px;
+	margin: 5px;
+	width: 95%;
+	border: #000 1px dotted;
+	border-radius: 5px;
+}
+
 .otherPosts {
 	text-align: right;
 	min-width: 200px;
